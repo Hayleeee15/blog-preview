@@ -5,54 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body{
-      background-color: hsl(47, 88%, 63%);
-      font-family: figtree;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    p {
-      color: hsl(0, 0%, 42%);
-      font-size: 16px;
-    }
-    .container {
-      background-color: hsl(0, 0%, 100%);
-      box-sizing: border-box;
-      border-radius: 10px;
-      box-shadow: 10px 10px 20px black;
-      padding: 20px;
-      width: 300px;
-    }
-    .container img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .learn {
-      color: hsl(0, 0%, 7%);
-      font-weight: 800;
-      background-color: hsl(47, 88%, 63%);
-      box-sizing: border-box;
-      border-radius: 10px;
-      padding: 10px;
-      font-size: 16px;
-      width: 33%;
-    }
-
-    .avatar {
-    }
-    .attribution { font-size: 11px; 
-      text-align: center;
-      }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -63,13 +18,13 @@
 
     <p>Published 21 Dec 2023</p>
 
-    <h3>HTML & CSS foundations</h3>
+    <h3><a href="https://www.frontendmentor.io">HTML & CSS foundations</a></h3>
 
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <p class="gray">These languages are the backbone of every website, defining structure, content, and presentation.</p>
 
-    <p>Greg Hooper</p>
+    <p><img src="assets/images/image-avatar.webp" alt="Photo of Greg Hooper" style="width: 30px;vertical-align: middle;"><b> Greg Hooper</b></p>
   </div>
-<img src="assets/images/image-avatar.webp" alt="Photo of Greg Hooper" class="avatar">
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Haylee</a>.
