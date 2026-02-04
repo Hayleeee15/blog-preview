@@ -1,11 +1,14 @@
     body {
       background-color: hsl(47, 88%, 63%);
       font-family: figtree;
-      display: grid;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
+
     }
+
     p {
       color: hsl(0, 0%, 7%);
       font-size: 16px;
@@ -14,10 +17,11 @@
     .gray {
       color: hsl(0, 0%, 42%);
     }
+
     .container {
       background-color: hsl(0, 0%, 100%);
       box-sizing: border-box;
-      outline: black solid 1px;
+      border: black solid 1px;
       border-radius: 10px;
       box-shadow: 5px 5px  black;
       padding: 20px;
@@ -47,8 +51,11 @@
       width: 20%;
     }
 
-    .attribution { font-size: 11px; 
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 11px; 
       text-align: center;
       }
 
-    .attribution a { color: hsl(228, 45%, 44%); }
+    footer a { color: hsl(228, 45%, 44%); }
