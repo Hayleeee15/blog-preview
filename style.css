@@ -1,6 +1,7 @@
     body {
       background-color: hsl(47, 88%, 63%);
-      font-family: figtree;
+      font-family: 'figtree', sans-serif;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,18 +19,19 @@
       color: hsl(0, 0%, 42%);
     }
 
-    .container {
+    main {
       background-color: hsl(0, 0%, 100%);
+
       box-sizing: border-box;
       border: black solid 1px;
-      border-radius: 10px;
-      box-shadow: 5px 5px  black;
-      padding: 20px;
-      width: 350px;
+      border-radius: 20px;
+      box-shadow: 7px 7px  black;
+
+      padding: 20px 20px 10px 20px;
+      width: 375px;
     }
-    .container img {
-      border-radius: 10px;
-      width: 100%;
+    main img {
+      border-radius: 15px;
     }
 
     h3 a {
@@ -43,12 +45,24 @@
 
     .learn {
       color: hsl(0, 0%, 7%);
-      font-weight: 800;
+      font-weight: bold;
+
       background-color: hsl(47, 88%, 63%);
       border-radius: 10px;
       padding: 10px;
-      font-size: 16px;
       width: 20%;
+    }
+    
+    section img{
+      display: flex;
+      width: 30px;
+    }
+
+    section p {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     footer {
