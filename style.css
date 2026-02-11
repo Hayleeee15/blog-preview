@@ -1,75 +1,87 @@
-    body {
-      background-color: hsl(47, 88%, 63%);
-      font-family: 'figtree', sans-serif;
+:root {
+  --bg-color: hsl(47, 88%, 63%);
+  --main-font-color: hsl(0, 0%, 7%);
+  --description-color: hsl(0, 0%, 42%);
+  --card-bg-color: hsl(0, 0%, 100%);
+  --border-color: black
+}
 
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+body {
+  background-color: var(--bg-color);
+  font-family: 'figtree', sans-serif;
 
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
 
-    p {
-      color: hsl(0, 0%, 7%);
-      font-size: 16px;
-    }
+p {
+  color: var(--main-font-color);
+  font-size: 1rem;
+}
 
-    .gray {
-      color: hsl(0, 0%, 42%);
-    }
+.description {
+  color: var(--description-color);
+}
 
-    main {
-      background-color: hsl(0, 0%, 100%);
+main {
+  background-color: var(--card-bg-color);
 
-      box-sizing: border-box;
-      border: black solid 1px;
-      border-radius: 20px;
-      box-shadow: 7px 7px  black;
+  box-sizing: border-box;
+  border: var(--border-color) solid 1px;
+  border-radius: 1.25rem;
+  box-shadow: .5rem .5rem  var(--border-color);
 
-      padding: 20px 20px 10px 20px;
-      width: 375px;
-    }
-    main img {
-      border-radius: 15px;
-    }
+  padding: 1.25rem 1.25rem .625rem 1.25rem;
+  width: 23.4375rem;
+}
 
-    h3 a {
-      color:  hsl(0, 0%, 7%);
-      font-weight: 800;
-      text-decoration: none;
-    }
-    h3 a:hover {
-      color:  hsl(47, 88%, 63%);
-    }
+main img {
+  border-radius: 0.9375rem;
+}
 
-    .learn {
-      color: hsl(0, 0%, 7%);
-      font-weight: bold;
+h1 a {
+  color:  var(--main-font-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-decoration: none;
+}
 
-      background-color: hsl(47, 88%, 63%);
-      border-radius: 10px;
-      padding: 10px;
-      width: 20%;
-    }
+h1 a:hover {
+  color:  var(--bg-color);
+}
+
+.learn {
+  color: var(--main-font-color);
+  font-weight: bold;
+
+  background-color: var(--bg-color);
+  border-radius: .625rem;
+  padding: .625rem;
+  width: 20%;
+}
     
-    section img{
-      display: flex;
-      width: 30px;
-    }
+section img{
+  display: flex;
+  width: 1.875rem;
+}
 
-    section p {
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+section p {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+}
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 11px; 
-      text-align: center;
-      }
+footer {
+  position: absolute;
+  bottom: .625rem;
+  font-size: .75rem; 
+  text-align: center;
+}
 
-    footer a { color: hsl(228, 45%, 44%); }
+footer a { 
+  color: var(--description-color); 
+  text-decoration: none;}
